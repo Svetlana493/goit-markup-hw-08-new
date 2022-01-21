@@ -1,0 +1,245 @@
+.footer-section {
+  background-color: $hero-footer-color;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-section__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
+.address-footer__logo {
+  display: block;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+}
+.address-footer__logo-web {
+  color: $accent-color;
+}
+.address {
+  min-width: 230px;
+  font-style: normal;
+  margin-top: 20px;
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__geo {
+    color: $primary-white-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+}
+
+.address__link {
+  color: $text-footer;
+  &:hover {
+    color: $primary-white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.socials {
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 70px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 0;
+
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+      justify-content: center;
+    }
+  }
+
+  &__element:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background-color: $bg-icon-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .socials__icon {
+    fill: $primary-white-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.subscribe {
+  width: 100%;
+
+  margin-left: 0;
+  padding-top: 0;
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &__form {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.subscribe__input {
+  width: 100%;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: $hero-footer-color;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $text-footer;
+  background-color: $hero-footer-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.subscribe__button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  border: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: $button-bg-hover;
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: $primary-white-color;
+}
