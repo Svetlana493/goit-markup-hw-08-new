@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 50px;
+  max-width: 100%;
+  margin: -4px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.filter__type {
+  margin: 4px;
+}
+
+.filter__button {
+  background-color: $bgColorMiddle;
+  color: $colorTitleText;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+    color: #ffffff;
+    box-shadow: $shadowItem;
+  }
+}

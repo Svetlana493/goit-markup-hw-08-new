@@ -1,0 +1,39 @@
+@import "../utils/variables";
+
+.contacts__list {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.contacts__list-item:not(:last-child) {
+  margin-bottom: 6px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 7px;
+  }
+}
+
+.contacts__map-address {
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.71;
+}
+
+.contacts__mailphone {
+  font-style: normal;
+  color: #ffffff99;
+  line-height: 1.71;
+  letter-spacing: $fontLetterSpacingPrimary;
+}
+
+.contacts__link {
+  font-size: $fontSizePrimary;
+  line-height: 1.6;
+  .contacts__link:hover,
+  .contacts__link:focus {
+    color: $colorAccent;
+  }
+}

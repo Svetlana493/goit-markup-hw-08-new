@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.customers__list {
+  display: block;
+
+  @media screen and (min-width: 390px) {
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid: repeat(1, 1fr) / repeat(6, 1fr);
+  }
+}
+
+.customers__list-item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 390px) {
+    margin-bottom: 0;
+  }
+}
+
+.customers__shell {
+  height: 92px;
+  padding: 15px 31px;
+  border-radius: 4px;
+  fill: $colorPrimaryIcon;
+  border: 1px solid $colorPrimaryIcon;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorAccent;
+    fill: $colorAccent;
+  }
+}

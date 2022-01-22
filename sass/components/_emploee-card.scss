@@ -1,0 +1,23 @@
+@import "../utils/variables";
+
+.employee__meta {
+  padding-top: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.employee__name {
+  color: $colorTitleText;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.employee__position {
+  margin-top: 0;
+  margin-bottom: 16px;
+}

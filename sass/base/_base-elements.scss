@@ -1,0 +1,73 @@
+@import "../utils/_variables.scss";
+
+body {
+  background-color: $bgColorPrimary;
+  color: $colorPrimaryText;
+  font-family: $fontFamilyPrimary;
+  font-size: $fontSizePrimary;
+  letter-spacing: $fontLetterSpacingPrimary;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: $colorTitleText;
+
+  margin: 0 auto 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.h3-title {
+  font-weight: 700;
+  font-size: $fontSizePrimary;
+  line-height: 1.14;
+  letter-spacing: $fontLetterSpacingPrimary;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.h3-title--footer-indent {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

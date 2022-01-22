@@ -1,0 +1,55 @@
+@import "../utils/variables";
+
+.features__list {
+  line-height: 1.71;
+  display: block;
+  // display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid: repeat(1, 1fr) / repeat(4, 1fr);
+  }
+}
+
+.features__list-item:not(:nth-last-child(1)) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.features__thumb {
+  max-height: 120px;
+  display: block;
+  padding: 25px 100px;
+  background-color: $bgColorMiddle;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.features__icon {
+  display: inline-block;
+}
+
+.features__title {
+  color: $colorTitleText;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.features__content {
+  margin: 10px 0 0;
+}

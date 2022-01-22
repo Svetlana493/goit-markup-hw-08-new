@@ -1,0 +1,68 @@
+@import "../utils/variables";
+
+.example {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.example__image-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.example__link-box {
+  flex: 1;
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.example__title {
+  color: $colorTitleText;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example__text {
+  color: $colorPrimaryText;
+  font-size: 16px;
+  line-height: 1.87;
+
+  margin: 3px 0 0;
+}
+
+.example__image-overlay {
+  position: absolute;
+  // display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 24px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: $fontLetterSpacingPrimary;
+  color: #ffffff;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  pointer-events: none;
+
+  transform: translateY(101%);
+  transition: transform $animationDuration $animationTimeFunction;
+
+  .examples-set__item:hover &,
+  .examples-set__item:focus & {
+    transform: translateY(0);
+  }
+}
