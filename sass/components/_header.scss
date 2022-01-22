@@ -57,9 +57,9 @@
     display: flex;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: auto;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-left: auto;
+  // }
 }
 
 .nav__item {
@@ -137,7 +137,7 @@
 }
 .contacts-thumb {
   @media screen and (min-width: 768px) {
-    margin-left: 40px;
+    margin-left: 84px;
   }
   @media (min-width: 1200px) {
     margin-left: auto;

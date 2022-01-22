@@ -184,12 +184,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav__list {
-    margin-left: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .nav__item {
     padding-top: 0;
@@ -278,7 +272,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .contacts-thumb {
-    margin-left: 40px;
+    margin-left: 84px;
   }
 }
 
