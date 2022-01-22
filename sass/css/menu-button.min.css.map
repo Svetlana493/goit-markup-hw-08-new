@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,AAAC,CACX,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,CAAC,CACd,OAAO,CAAE,WAAW,CACpB,MAAM,CAAE,IAAI,CACZ,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,gBAAgB,CAAE,WAAW,CAC9B",
-    "sources": [
-        "../components/menu-button.scss"
-    ],
-    "names": [],
-    "file": "menu-button.min.css"
-}
