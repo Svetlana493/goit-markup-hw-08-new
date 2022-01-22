@@ -1772,6 +1772,7 @@ textarea {
 }
 
 .form-modals__icon {
+  margin-top: 3px;
   position: absolute;
   display: block;
   top: 50%;
@@ -1835,6 +1836,7 @@ textarea {
 }
 
 .checkbox__icon {
+  margin-left: 10px;
   display: inline-block;
   width: 16px;
   height: 16px;
